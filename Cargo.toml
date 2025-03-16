@@ -1,0 +1,22 @@
+[package]
+name = "brave-cli"
+version = "0.1.0"
+edition = "2024"
+description = "Command-line interface for the Brave Search API"
+authors = ["Shane Witbeck <shane@surly.dev>"]
+license = "MIT"
+repository = "https://github.com/thesurlydev/brave-cli"
+documentation = "https://docs.rs/brave-cli"
+homepage = "https://github.com/thesurlydev/brave-cli"
+keywords = ["brave", "search", "api", "cli"]
+categories = ["command-line-utilities", "api-bindings"]
+readme = "README.md"
+
+[dependencies]
+clap = "4.5"
+flate2 = "1.0"
+reqwest = { version = "0.12", features = ["json"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1", features = ["full"] }
+urlencoding = "2.1"
